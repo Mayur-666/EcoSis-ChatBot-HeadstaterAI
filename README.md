@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ecosis Chatbot
 
-## Getting Started
+Welcome to the Ecosis Chatbot repository! This project is a multilingual chatbot built using Next.js. The chatbot is designed to enhance user experience on the Ecosis website by providing support in multiple languages.
 
-First, run the development server:
+### Snapshots
+![image](https://github.com/user-attachments/assets/ec9ab4c9-9696-4cf0-b349-218f4098e94f)
+
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Supported Languages](#supported-languages)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- **Multilingual Support**: Chatbot supports multiple languages, enabling a wide range of users to interact in their preferred language.
+- **Seamless Integration**: Built with Next.js, making it easy to integrate into the Ecosis website.
+- **Responsive Design**: Works well on various devices, ensuring a smooth user experience.
+- **Extensible**: Easily extendable to add more languages or features as needed.
+
+## Installation
+
+To get started with the Ecosis Chatbot, follow these steps:
+
+### 1. Clone the Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/ecosis-chatbot.git
+cd ecosis-chatbot
+```
+### 2. Install Dependencies
+
+```bash
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Start the Development Server
+```bash
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 4. Build for Production
+``` bash
 
-## Learn More
+npm run build
+npm start
 
-To learn more about Next.js, take a look at the following resources:
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Usage
+After installation, the chatbot can be accessed by navigating to the Ecosis website and interacting with the chatbot widget.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+You can customize the chatbot's behavior and appearance by modifying the configuration files located in the config directory.
 
-## Deploy on Vercel
+### Configuration
+The chatbot configuration includes settings for languages, API keys, and other options. Update the .env file with your specific settings:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+NEXT_PUBLIC_API_KEY=your-api-key
+NEXT_PUBLIC_SUPPORTED_LANGUAGES=en,fr,es,de
+
+```
+
+### Supported Languages
+The Ecosis Chatbot currently supports the following languages:
+
+English (en)
+French (fr)
+Spanish (es)
+German (de)
+Additional languages can be added by modifying the language files in the locales directory.
+
+### Contributing
+We welcome contributions from the community! To contribute:
+
+### Fork the repository
+
+```bash
+git fork https://github.com/your-username/ecosis-chatbot.git
+
+```
+### Create a new branch
+
+```bash
+
+git checkout -b feature/YourFeature
+
+```
+
+### Make your changes
+
+### Commit your changes
+
+```bash
+
+git commit -m 'Add new feature'
+```
+
+### Push to the branch
+
+```bash
+
+git push origin feature/YourFeature
+```
+
+### Open a pull request
